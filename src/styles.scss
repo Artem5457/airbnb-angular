@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* mixins */
+
+@mixin onLargeScreen {
+  @media (min-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin onNoteBook {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin onTabletPro {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin onSmartPhone {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
